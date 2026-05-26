@@ -1,203 +1,320 @@
-<!--
-// v0 by Vercel.
-// https://v0.dev/t/m2peeqrgwbb
--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Larry Choi | Resume</title>
 
-<div class="flex flex-col min-h-dvh bg-background text-foreground">
-  <header class="container mx-auto py-12 px-4 md:py-16 md:px-6">
-    <div class="grid gap-6 md:grid-cols-2 md:gap-12">
-      <div class="space-y-4">
-        <h1 class="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">Larry Choi</h1>
-        <h2 class="text-2xl font-semibold text-muted-foreground sm:text-3xl">Software Engineer</h2>
-        <p class="text-muted-foreground md:text-lg">
-          Experienced software engineer with a passion for building scalable and efficient applications. Proficient
-          in a variety of programming languages and frameworks, and always eager to learn new technologies.
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+  <div class="min-h-screen bg-[radial-gradient(circle_at_top_left,_#e0e7ff,_transparent_35%),radial-gradient(circle_at_top_right,_#fce7f3,_transparent_30%),linear-gradient(to_bottom,_#ffffff,_#f8fafc)]">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur-xl">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+        <a href="#" class="text-lg font-bold tracking-tight text-slate-900">
+          Larry Choi
+        </a>
+
+        <div class="hidden gap-6 text-sm font-medium text-slate-600 md:flex">
+          <a href="#experience" class="hover:text-indigo-600">Experience</a>
+          <a href="#education" class="hover:text-indigo-600">Education</a>
+          <a href="#skills" class="hover:text-indigo-600">Skills</a>
+          <a href="#projects" class="hover:text-indigo-600">Projects</a>
+          <a href="#contact" class="hover:text-indigo-600">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="mx-auto grid max-w-6xl gap-10 px-5 py-20 md:grid-cols-[1.3fr_0.7fr] md:items-center md:py-28">
+      <div>
+        <p class="mb-4 inline-flex rounded-full bg-indigo-50 px-4 py-2 text-sm font-semibold text-indigo-700 ring-1 ring-indigo-100">
+          Software Engineer · Problem Solver · CS Student
         </p>
-      </div>
-      <div class="flex justify-center">
-        <img
-          src="/image.jpg"
-          width="300"
-          height="300"
-          alt="Larry Choi"
-          class="rounded-full"
-          style="aspect-ratio: 300 / 300; object-fit: cover;"
-        />
-      </div>
-    </div>
-  </header>
-  <main class="container mx-auto space-y-16 px-4 md:px-6">
-    <section>
-      <h2 class="mb-6 text-3xl font-bold">Work Experience</h2>
-      <div class="space-y-8">
-        <div class="grid gap-2">
-          <div class="flex items-center justify-between">
-            <h3 class="text-xl font-semibold">Software Engineer</h3>
-            <div class="text-muted-foreground">2023 - Present</div>
-          </div>
-          <p class="text-muted-foreground">
-            Researched and Developed about fluid outlier detection algorithms.
-            Now I'm studying about computer science.
-          </p>
-        </div>
-        <div class="grid gap-2">
-          <div class="flex items-center justify-between">
-            <h3 class="text-xl font-semibold">Intern of Co.Loonshot, Web Crawling</h3>
-            <div class="text-muted-foreground">2023 - 2023</div>
-          </div>
-          <p class="text-muted-foreground">
-            Worked on web crawling projects, collecting and analyzing data from various sources. Developed scripts.
-            Built database and collected data from the web.
-          </p>
-        </div>
-        <div class="grid gap-2">
-          <div class="flex items-center justify-between">
-            <h3 class="text-xl font-semibold">Intern of Co.WVR, Software Development</h3>
-            <div class="text-muted-foreground">2024 - 2024</div>
-          </div>
-          <p class="text-muted-foreground">
-            Gained hands-on experience in algorithm researching, contributing to various projects and learning new
-            technologies. Demonstrated strong problem-solving skills and a collaborative mindset.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section>
-      <h2 class="mb-6 text-3xl font-bold">Education</h2>
-      <div class="space-y-8">
-        <div class="grid gap-2">
-          <div class="flex items-center justify-between">
-            <h3 class="text-xl font-semibold">Bachelor of Science in Computer Science</h3>
-            <div class="text-muted-foreground">2020 - 2025</div>
-          </div>
-          <p class="text-muted-foreground">University of Cheonam, Korea</p>
-        </div>
-      </div>
-    </section>
-    <section>
-      <h2 class="mb-6 text-3xl font-bold">Skills</h2>
-      <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
-        <div
-          class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
-          data-v0-t="badge"
-        >
-          Flutter
-        </div>
-        <div
-          class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
-          data-v0-t="badge"
-        >
-          MySQL
-        </div>
-        <div
-          class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
-          data-v0-t="badge"
-        >
-          C++
-        </div>
-        <div
-          class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
-          data-v0-t="badge"
-        >
-          Python
-        </div>
-        <div
-          class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
-          data-v0-t="badge"
-        >
-          Pandas
-        </div>
-        <div
-          class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
-          data-v0-t="badge"
-        >
-          Git
-        </div>
-        <div
-          class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
-          data-v0-t="badge"
-        >
-          SQLite
-        </div>
-        <div
-          class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
-          data-v0-t="badge"
-        >
-          MS excel
-        </div>
-      </div>
-    </section>
-    <section>
-      <h2 class="mb-6 text-3xl font-bold">Projects</h2>
-      <div class="space-y-8">
-        <div class="grid gap-2">
-          <div class="flex items-center justify-between">
-            <h3 class="text-xl font-semibold">Personal Portfolio</h3>
-            <div class="text-muted-foreground">2023</div>
-          </div>
-          <p class="text-muted-foreground">Lorem ipsum</p>
-          <div class="flex gap-2">
-            <a
-              class="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-              href="#"
-              rel="ugc"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="h-4 w-4"
-              >
-                <path d="m22 13.29-3.33-10a.42.42 0 0 0-.14-.18.38.38 0 0 0-.22-.11.39.39 0 0 0-.23.07.42.42 0 0 0-.14.18l-2.26 6.67H8.32L6.1 3.26a.42.42 0 0 0-.1-.18.38.38 0 0 0-.26-.08.39.39 0 0 0-.23.07.42.42 0 0 0-.14.18L2 13.29a.74.74 0 0 0 .27.83L12 21l9.69-6.88a.71.71 0 0 0 .31-.83Z"></path>
-              </svg>
-              View on GitHub
-            </a>
-          </div>
-        </div>
-        <div class="grid gap-2">
-          <div class="flex items-center justify-between">
-            <h3 class="text-xl font-semibold">Todo App</h3>
-            <div class="text-muted-foreground">2022</div>
-          </div>
-          <p class="text-muted-foreground">
-            Developed a simple todo application using React, TypeScript, and local storage. Focused on building a
-            clean and user-friendly interface.
-          </p>
-          <div class="flex gap-2">
-            <a
-              class="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-              href="#"
-              rel="ugc"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="h-4 w-4"
-              >
-                <path d="m22 13.29-3.33-10a.42.42 0 0 0-.14-.18.38.38 0 0 0-.22-.11.39.39 0 0 0-.23.07.42.42 0 0 0-.14.18l-2.26 6.67H8.32L6.1 3.26a.42.42 0 0 0-.1-.18.38.38 0 0 0-.26-.08.39.39 0 0 0-.23.07.42.42 0 0 0-.14.18L2 13.29a.74.74 0 0 0 .27.83L12 21l9.69-6.88a.71.71 0 0 0 .31-.83Z"></path>
-              </svg>
-              View on GitHub
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="bg-muted py-6 text-center text-muted-foreground">
-    <p>© 2024 Larry Choi. All rights reserved.</p>
-  </footer>
-</div>
 
+        <h1 class="text-5xl font-black tracking-tight text-slate-950 sm:text-6xl md:text-7xl">
+          Hi, I'm
+          <span class="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+            Larry Choi
+          </span>
+        </h1>
+
+        <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+          I’m a software engineer interested in algorithm research, data-driven development,
+          and building practical applications with clean, maintainable code.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a
+            href="#projects"
+            class="rounded-xl bg-slate-950 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-indigo-700"
+          >
+            View Projects
+          </a>
+
+          <a
+            href="mailto:lawrencechoi1653@gmail.com"
+            class="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-indigo-300 hover:text-indigo-700"
+          >
+            Contact Me
+          </a>
+
+          <a
+            href="https://github.com/Larry-Choi"
+            target="_blank"
+            class="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-indigo-300 hover:text-indigo-700"
+          >
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="flex justify-center md:justify-end">
+        <div class="relative">
+          <div class="absolute -inset-4 rounded-full bg-gradient-to-tr from-indigo-200 to-pink-200 blur-2xl"></div>
+          <img
+            src="/image.jpg"
+            alt="Larry Choi"
+            class="relative h-64 w-64 rounded-3xl border-4 border-white object-cover shadow-2xl sm:h-72 sm:w-72"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-6xl space-y-16 px-5 pb-20">
+
+      <!-- Summary -->
+      <section class="glass-card rounded-3xl p-8 shadow-sm">
+        <h2 class="text-2xl font-bold text-slate-950">About Me</h2>
+        <p class="mt-4 leading-8 text-slate-600">
+          I have experience in web crawling, database construction, algorithm research,
+          and software development. I enjoy learning computer science fundamentals and applying
+          them to real-world problems through reliable and efficient software.
+        </p>
+      </section>
+
+      <!-- Work Experience -->
+      <section id="experience">
+        <div class="mb-8">
+          <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">Career</p>
+          <h2 class="mt-2 text-3xl font-black text-slate-950">Work Experience</h2>
+        </div>
+
+        <div class="space-y-5">
+          <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-slate-950">Software Engineer</h3>
+                <p class="mt-1 text-sm font-medium text-indigo-600">Research & Development</p>
+              </div>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-semibold text-slate-600">
+                2023 - Present
+              </span>
+            </div>
+            <p class="mt-4 leading-7 text-slate-600">
+              Researched and developed fluid outlier detection algorithms.
+              Currently studying computer science and strengthening software engineering fundamentals.
+            </p>
+          </article>
+
+          <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-slate-950">Web Crawling Intern</h3>
+                <p class="mt-1 text-sm font-medium text-indigo-600">Loonshot</p>
+              </div>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-semibold text-slate-600">
+                2023
+              </span>
+            </div>
+            <p class="mt-4 leading-7 text-slate-600">
+              Worked on web crawling projects by collecting, processing, and analyzing data from various sources.
+              Developed scripts and built databases for structured data management.
+            </p>
+          </article>
+
+          <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-slate-950">Software Development Intern</h3>
+                <p class="mt-1 text-sm font-medium text-indigo-600">WVR</p>
+              </div>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-semibold text-slate-600">
+                2024
+              </span>
+            </div>
+            <p class="mt-4 leading-7 text-slate-600">
+              Gained hands-on experience in algorithm research and software development.
+              Contributed to projects while improving problem-solving and collaboration skills.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education">
+        <div class="mb-8">
+          <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">Academic</p>
+          <h2 class="mt-2 text-3xl font-black text-slate-950">Education</h2>
+        </div>
+
+        <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-slate-950">Bachelor of Science in Computer Science</h3>
+              <p class="mt-1 text-slate-600">University of Cheonam, Korea</p>
+            </div>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-semibold text-slate-600">
+              2020 - 2025
+            </span>
+          </div>
+        </article>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills">
+        <div class="mb-8">
+          <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">Stack</p>
+          <h2 class="mt-2 text-3xl font-black text-slate-950">Skills</h2>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="font-bold text-slate-950">Languages</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-indigo-50 px-3 py-1 text-sm font-semibold text-indigo-700">Python</span>
+              <span class="rounded-full bg-indigo-50 px-3 py-1 text-sm font-semibold text-indigo-700">C++</span>
+              <span class="rounded-full bg-indigo-50 px-3 py-1 text-sm font-semibold text-indigo-700">Dart</span>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="font-bold text-slate-950">Frameworks & Libraries</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-violet-50 px-3 py-1 text-sm font-semibold text-violet-700">Flutter</span>
+              <span class="rounded-full bg-violet-50 px-3 py-1 text-sm font-semibold text-violet-700">Pandas</span>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="font-bold text-slate-950">Database & Tools</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-sky-50 px-3 py-1 text-sm font-semibold text-sky-700">MySQL</span>
+              <span class="rounded-full bg-sky-50 px-3 py-1 text-sm font-semibold text-sky-700">SQLite</span>
+              <span class="rounded-full bg-sky-50 px-3 py-1 text-sm font-semibold text-sky-700">Git</span>
+              <span class="rounded-full bg-sky-50 px-3 py-1 text-sm font-semibold text-sky-700">Excel</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+        <div class="mb-8">
+          <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">Builds</p>
+          <h2 class="mt-2 text-3xl font-black text-slate-950">Projects</h2>
+        </div>
+
+        <div class="grid gap-5 md:grid-cols-2">
+          <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+            <div class="flex items-center justify-between gap-4">
+              <h3 class="text-xl font-bold text-slate-950">Personal Portfolio</h3>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-semibold text-slate-600">2024</span>
+            </div>
+            <p class="mt-4 leading-7 text-slate-600">
+              A personal resume website built to introduce my experience, skills, and projects.
+            </p>
+            <div class="mt-5 flex gap-3">
+              <a
+                href="https://larry-choi.github.io/"
+                target="_blank"
+                class="rounded-xl bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-700"
+              >
+                View Website
+              </a>
+              <a
+                href="https://github.com/Larry-Choi"
+                target="_blank"
+                class="rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-indigo-300 hover:text-indigo-700"
+              >
+                GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+            <div class="flex items-center justify-between gap-4">
+              <h3 class="text-xl font-bold text-slate-950">Data Crawling Project</h3>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-semibold text-slate-600">2023</span>
+            </div>
+            <p class="mt-4 leading-7 text-slate-600">
+              Built scripts for collecting web data and organizing it into structured databases.
+            </p>
+            <div class="mt-5 flex gap-3">
+              <a
+                href="https://github.com/Larry-Choi"
+                target="_blank"
+                class="rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-indigo-300 hover:text-indigo-700"
+              >
+                View on GitHub
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="rounded-3xl bg-slate-950 p-8 text-white shadow-xl">
+        <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-widest text-indigo-300">Contact</p>
+            <h2 class="mt-2 text-3xl font-black">Let's build something useful.</h2>
+            <p class="mt-3 text-slate-300">
+              Feel free to reach out through email or GitHub.
+            </p>
+          </div>
+
+          <div class="flex flex-wrap gap-3">
+            <a
+              href="mailto:lawrencechoi1653@gmail.com"
+              class="rounded-xl bg-white px-5 py-3 text-sm font-bold text-slate-950 transition hover:bg-indigo-100"
+            >
+              Email Me
+            </a>
+            <a
+              href="https://github.com/Larry-Choi"
+              target="_blank"
+              class="rounded-xl border border-white/20 px-5 py-3 text-sm font-bold text-white transition hover:bg-white/10"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white/70 py-8 text-center text-sm text-slate-500">
+      © 2024 Larry Choi. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
